@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B01E3849-C74D-4F48-A8D5-662C5E80D0F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCP</RootNamespace>
+    <AssemblyName>MCP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>usb.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.MemoryJoin, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFrameworkCore.MemoryJoin.0.7.0\lib\net45\EntityFramework.MemoryJoin.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Windows">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="db\categoria.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\coeficientes_pago.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\copia.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\copia_puntos.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\DBManager.cs" />
+    <Compile Include="db\genero.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\media_files.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\media_generos.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\media_paises.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="db\pais.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\preferencia.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\registro_copias.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\repos\CopiasRepository.cs" />
+    <Compile Include="db\repos\PreferencesRepository.cs" />
+    <Compile Include="db\repos\TipoPagosRepository.cs" />
+    <Compile Include="db\repos\TrabajadoresRepository.cs" />
+    <Compile Include="db\repos\CoeficientePagosRepository.cs" />
+    <Compile Include="db\repos\UsuariosRepository.cs" />
+    <Compile Include="db\repos\RegistroCopiasRepository.cs" />
+    <Compile Include="db\repos\MediaGenerosRepository.cs" />
+    <Compile Include="db\repos\TipoCategoriasRepository.cs" />
+    <Compile Include="db\tipos_pago.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\tipo_categorias.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\trabajadore.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\usuario.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gui\components\BackgroundMediaFileCopy.cs" />
+    <Compile Include="gui\components\backupcopy\BackupCreator.cs" />
+    <Compile Include="gui\components\backupcopy\BackupEventArgs.cs" />
+    <Compile Include="gui\components\backupcopy\Structures.cs" />
+    <Compile Include="gui\components\ContentLoad.cs" />
+    <Compile Include="gui\components\CustomCombo.xaml.cs">
+      <DependentUpon>CustomCombo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\components\ICopyController.cs" />
+    <Compile Include="gui\components\ListViewMediaItem.cs" />
+    <Compile Include="gui\components\IconItem\HomeIconItemClickHandler.cs" />
+    <Compile Include="gui\components\IconItem\EditionIconItemClickHandler.cs" />
+    <Compile Include="gui\components\IconItem\IconItem.cs" />
+    <Compile Include="gui\components\ColumnPanel .cs" />
+    <Compile Include="gui\components\IconItem\IIconItemClickHandler.cs" />
+    <Compile Include="gui\components\MediaFilePlayer.xaml.cs">
+      <DependentUpon>MediaFilePlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\components\MediaFile_Basic_Info.cs" />
+    <Compile Include="gui\components\Ookii\Interop\ComDlgResources.cs" />
+    <Compile Include="gui\components\Ookii\Interop\COMGuids.cs" />
+    <Compile Include="gui\components\Ookii\Interop\ErrorHelper.cs" />
+    <Compile Include="gui\components\Ookii\Interop\IProgressDialog.cs" />
+    <Compile Include="gui\components\Ookii\Interop\ShellComInterfaces.cs" />
+    <Compile Include="gui\components\Ookii\Interop\ShellWrapperDefinitions.cs" />
+    <Compile Include="gui\components\Ookii\Interop\Win32Resources.cs" />
+    <Compile Include="gui\components\Ookii\NativeMethods.cs" />
+    <Compile Include="gui\components\Ookii\SafeHandles.cs" />
+    <Compile Include="gui\components\ProgressInfo.xaml.cs">
+      <DependentUpon>ProgressInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\components\StorageConverter.cs" />
+    <Compile Include="gui\components\Ookii\VistaFolderBrowserDialog.cs" />
+    <Compile Include="gui\HomeCatalogManager.cs" />
+    <Compile Include="gui\IListRefreshable.cs" />
+    <Compile Include="gui\ConnectionConfigDialog.xaml.cs">
+      <DependentUpon>ConnectionConfigDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\ListDialog.xaml.cs">
+      <DependentUpon>ListDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\ListSelectorDialog.xaml.cs">
+      <DependentUpon>ListSelectorDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\CopyListViewDialog.xaml.cs">
+      <DependentUpon>CopyListViewDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\administracion\PCoeficientes.xaml.cs">
+      <DependentUpon>PCoeficientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\administracion\PTrabajadores.xaml.cs">
+      <DependentUpon>PTrabajadores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\administracion\PPuntosCopia.xaml.cs">
+      <DependentUpon>PPuntosCopia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\administracion\PUsuarios.xaml.cs">
+      <DependentUpon>PUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\CopyListViewDialogPage.xaml.cs">
+      <DependentUpon>CopyListViewDialogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\PRegistroCopias.xaml.cs">
+      <DependentUpon>PRegistroCopias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\PEditarCatalogo.xaml.cs">
+      <DependentUpon>PEditarCatalogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\PLoader.xaml.cs">
+      <DependentUpon>PLoader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="USB\USBManager.cs" />
+    <Compile Include="USB\USBSerialNumber.cs" />
+    <Page Include="gui\components\CustomCombo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\components\MediaFilePlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\components\ProgressInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\ConnectionConfigDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\ListDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\ListSelectorDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\CopyListViewDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\LoginDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\administracion\PCoeficientes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\administracion\PTrabajadores.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\administracion\PPuntosCopia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\administracion\PUsuarios.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\CopyListViewDialogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\nomencladores\PGeneros.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\nomencladores\PPaises.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\nomencladores\PCategorias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\PRegistroCopias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\PEditarCatalogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="gui\Pages\PLoader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\PScanner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AppManager.cs" />
+    <Compile Include="db\repos\MediaFilesRepository.cs" />
+    <Compile Include="db\repos\GenerosRepository.cs" />
+    <Compile Include="db\repos\PaisesRepository.cs" />
+    <Compile Include="db\repos\PuntoCopiasRepository.cs" />
+    <Compile Include="db\repos\CategoriasRepository.cs" />
+    <Compile Include="db\repos\IRepositorio.cs" />
+    <Compile Include="gui\components\CheckItem.cs" />
+    <Compile Include="gui\components\Poster.cs" />
+    <Compile Include="gui\components\Poster.Designer.cs">
+      <DependentUpon>Poster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\LoginDialog.xaml.cs">
+      <DependentUpon>LoginDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\nomencladores\PGeneros.xaml.cs">
+      <DependentUpon>PGeneros.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\nomencladores\PPaises.xaml.cs">
+      <DependentUpon>PPaises.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\nomencladores\PCategorias.xaml.cs">
+      <DependentUpon>PCategorias.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\PScanner.xaml.cs">
+      <DependentUpon>PScanner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="gui\Pages\Settings\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="gui\Pages\Settings\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Page Include="gui\Pages\Settings\Appearance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="gui\Pages\Settings\Appearance.xaml.cs">
+      <DependentUpon>Appearance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\Settings\AppearanceViewModel.cs" />
+    <Page Include="gui\Pages\PHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="gui\Pages\PHome.xaml.cs">
+      <DependentUpon>PHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Page Include="Themes\MCPModernWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="db\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="db\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\save.png" />
+    <Resource Include="Resources\cinema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db\Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="db\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Resources\usb.ico" />
+    <Resource Include="usb.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

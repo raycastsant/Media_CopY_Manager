@@ -1,0 +1,150 @@
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP 2.0.exe.config
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP 2.0.exe
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP 2.0.pdb
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.dll
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.SqlServer.dll
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\FirstFloor.ModernUI.dll
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.dll
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.xml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\FirstFloor.ModernUI.xml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.xml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.Entity.EF6.xml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csprojAssemblyReference.cache
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListSelectorDialog.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\LoginDialog.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PGeneros.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PPaises.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PCategorias.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogo.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogoStarter.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHomeStarter.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PLoader.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScannerStarter.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MainWindow.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\About.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\Appearance.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\SettingsPage.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\App.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\MediaFilePlayer.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\ProgressInfo.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListSelectorDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\LoginDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\LoginPage.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PGeneros.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PPaises.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PCategorias.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogo.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogoStarter.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHomeStarter.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PLoader.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScanner.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScannerStarter.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MainWindow.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\About.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\Appearance.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHome.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\SettingsPage.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\App.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0_Content.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0_MarkupCompile.cache
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0_MarkupCompile.lref
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\MediaFilePlayer.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\ProgressInfo.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\LoginPage.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScanner.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHome.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0.g.resources
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.Properties.Resources.resources
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.GenerateResource.cache
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.CoreCompileInputs.cache
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.CopyComplete
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0.exe
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP 2.0.pdb
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PRegistroCopias.baml
+E:\WORK\_Proyectos\Alexander\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PRegistroCopias.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP.exe.config
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP.exe
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MCP.pdb
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.MemoryJoin.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.SqlServer.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\FirstFloor.ModernUI.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\System.Runtime.WindowsRuntime.dll
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\Windows.winmd
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\EntityFramework.SqlServer.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\FirstFloor.ModernUI.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\MySql.Data.Entity.EF6.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\bin\Debug\System.Runtime.WindowsRuntime.xml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csprojAssemblyReference.cache
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ConnectionConfigDialog.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListDialog.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListSelectorDialog.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\CopyListViewDialog.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\LoginDialog.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PCoeficientes.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PTrabajadores.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PPuntosCopia.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PUsuarios.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\CopyListViewDialogPage.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\LoginPage.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PGeneros.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PPaises.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PCategorias.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PRegistroCopias.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogo.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PLoader.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MainWindow.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\About.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\Appearance.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHome.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\SettingsPage.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\Themes\MCPModernWindow.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\App.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\CustomCombo.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\MediaFilePlayer.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\ProgressInfo.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ConnectionConfigDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\ListSelectorDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\CopyListViewDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\LoginDialog.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PCoeficientes.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PTrabajadores.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PPuntosCopia.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PUsuarios.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\CopyListViewDialogPage.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\LoginPage.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PGeneros.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PPaises.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\nomencladores\PCategorias.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PRegistroCopias.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PEditarCatalogo.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PLoader.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScanner.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MainWindow.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\About.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\Settings\Appearance.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PHome.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\SettingsPage.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\App.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP_Content.g.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP_MarkupCompile.cache
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP_MarkupCompile.lref
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\CustomCombo.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\MediaFilePlayer.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\components\ProgressInfo.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\gui\Pages\PScanner.baml
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.g.resources
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.Properties.Resources.resources
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.GenerateResource.cache
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.CoreCompileInputs.cache
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.csproj.CopyComplete
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.exe
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\MCP.pdb

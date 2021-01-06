@@ -1,0 +1,20 @@
+﻿9
+
+
+exe
+C#
+.cs
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\obj\Debug\
+MCP
+none
+false
+DEBUG;TRACE
+E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\MCP 2.0\ModernUINavigationApp1\App.xaml
+281050163376
+21084555220
+99275943936
+26399155731
+gui\components\MediaFilePlayer.xaml;gui\components\ProgressInfo.xaml;gui\ListDialog.xaml;gui\ListSelectorDialog.xaml;gui\CopyListViewDialog.xaml;gui\LoginDialog.xaml;gui\ModernDialog1.xaml;gui\Pages\administracion\PCoeficientes.xaml;gui\Pages\administracion\PTrabajadores.xaml;gui\Pages\administracion\PPuntosCopia.xaml;gui\Pages\administracion\PUsuarios.xaml;gui\Pages\CopyListViewDialogPage.xaml;gui\Pages\LoginPage.xaml;gui\Pages\nomencladores\PGeneros.xaml;gui\Pages\nomencladores\PPaises.xaml;gui\Pages\nomencladores\PCategorias.xaml;gui\Pages\PRegistroCopias.xaml;gui\Pages\PEditarCatalogo.xaml;gui\Pages\PEditarCatalogoStarter.xaml;gui\Pages\PHomeStarter.xaml;gui\Pages\PLoader.xaml;gui\Pages\PScanner.xaml;gui\Pages\PScannerStarter.xaml;MainWindow.xaml;gui\Pages\Settings\About.xaml;gui\Pages\Settings\Appearance.xaml;gui\Pages\PHome.xaml;gui\Pages\SettingsPage.xaml;
+
+False
+

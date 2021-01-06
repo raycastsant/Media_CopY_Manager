@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="MCP.gui.Pages.CopyListViewDialogPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d">
+
+    <Grid Style="{StaticResource ContentRoot}" Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition MinWidth="200" Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="_infoPanel" Grid.Row="0" Grid.Column="0" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Código:" Grid.Row="0" Grid.Column="0" Foreground="#FF323131"></TextBlock>
+            <TextBox Name="tbCodigo" Grid.Row="0" Text="titulo" Grid.Column="1" IsReadOnly="True" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}"></TextBox>
+
+            <TextBlock Text="Tarifa:" Grid.Row="1" Grid.Column="0" Foreground="#FF323131"></TextBlock>
+            <TextBox Name="tbTipoPago" Grid.Row="1" Text="pago" Grid.Column="1" IsReadOnly="True" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}"></TextBox>
+
+            <TextBlock Text="Fecha:" Grid.Row="2" Grid.Column="0" Foreground="#FF323131"></TextBlock>
+            <TextBox Name="tbFecha" Grid.Row="2" Text="subs" Grid.Column="1" IsReadOnly="True" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}"></TextBox>
+
+            <TextBlock Text="Mosto calculado:" Grid.Row="3" Grid.Column="0" Foreground="#FF323131"></TextBlock>
+            <TextBox Name="tbMontoSystema" Grid.Row="3" Text="trailer" Grid.Column="1" IsReadOnly="True" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}"></TextBox>
+
+            <TextBlock Text="Monto real:" Grid.Row="4" Grid.Column="0" Foreground="#FF323131"></TextBlock>
+            <TextBox Name="tbMontoReal" Grid.Row="4" Text="Director" Grid.Column="1" IsReadOnly="True" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}"></TextBox>
+        </Grid>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderThickness="1" Margin="0" BorderBrush="LightSlateGray" Background="#f1f1f1">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <ListView Margin="0" Name="_listSeleccion"  Foreground="LightSlateGray" FontSize="14">
+                </ListView>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</UserControl>

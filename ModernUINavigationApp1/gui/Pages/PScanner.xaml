@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="MCP.gui.Pages.PScanner"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:components="clr-namespace:MCP.gui.components"
+             mc:Ignorable="d">
+    <Grid Style="{StaticResource ContentRoot}" Margin="0,0,0,0">
+        <Grid Name="_grid" Margin="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Name="_cProgress" Height="0"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="0"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TabControl Margin="5,5,0,0" Name="_tab" TabStripPlacement="Left" Grid.Column="0" Grid.Row="0">
+                <TabItem Header="TabItem">
+                    <TreeView>
+                        <Button/>
+                    </TreeView>
+                </TabItem>
+                <TabItem Header="TabItem">
+                    <Grid Background="#FFE5E5E5"/>
+                </TabItem>
+            </TabControl> 
+            
+            <!-- Tree Items 
+            <TreeView Grid.Row="0" Grid.Column="0" Name="_treeView" Margin="5,10,5,0" ClipToBounds="True" />
+-->
+            <!-- <components:MediaFilePlayer Grid.Column="1" Grid.Row="0" x:Name="_media" VerticalAlignment="Top"></components:MediaFilePlayer> -->
+
+            <Grid Grid.Row="1" Grid.Column="0" Margin="0,0,0,0">
+                <ProgressBar Name="_pBar" Margin="0"/>
+                <TextBlock Name="lProgress" Text="{Binding ElementName=_pBar, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right">
+                <Button Name="BtnScan" Click="BtnScan_Click" Width="200">
+                    <StackPanel Orientation="Horizontal" Width="150">
+                        <Image Source="/MCP;component/Resources/search.png"></Image>
+                        <TextBlock Text="Escanear" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+            
+                <Button Name="BtnSaveMovies" Click="BtnSaveMovies_Click" Width="200" IsEnabled="false">
+                    <StackPanel Orientation="Horizontal" Width="150">
+                        <Image Source="/MCP;component/Resources/save.png"></Image>
+                        <TextBlock Text="Guardar selección" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <mui:ModernProgressRing Grid.Row="0" Grid.Column="1" IsActive="false" Visibility="Hidden" Name="_LoaderGif" Width="80" Height="80" Style="{StaticResource ThreeBounceProgressRingStyle}" Margin="0" />
+    </Grid>
+</UserControl>

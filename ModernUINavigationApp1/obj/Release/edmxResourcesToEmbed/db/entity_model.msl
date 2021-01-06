@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="media_managerModelStoreContainer" CdmEntityContainer="media_managerEntities">
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="media_managerModel.categoria">
+        <MappingFragment StoreEntitySet="categorias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="categoria1" ColumnName="categoria" />
+          <ScalarProperty Name="carpeta" ColumnName="carpeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="copia_puntos">
+      <EntityTypeMapping TypeName="media_managerModel.copia_puntos">
+        <MappingFragment StoreEntitySet="copia_puntos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="generos">
+      <EntityTypeMapping TypeName="media_managerModel.genero">
+        <MappingFragment StoreEntitySet="generos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_files">
+      <EntityTypeMapping TypeName="media_managerModel.media_files">
+        <MappingFragment StoreEntitySet="media_files">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="categoria_id" ColumnName="categoria_id" />
+          <ScalarProperty Name="punto_copia_id" ColumnName="punto_copia_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="file_url" ColumnName="file_url" />
+          <ScalarProperty Name="str_file" ColumnName="str_file" />
+          <ScalarProperty Name="fichero_portada" ColumnName="fichero_portada" />
+          <ScalarProperty Name="fichero_trailer" ColumnName="fichero_trailer" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="anno" ColumnName="anno" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="reparto" ColumnName="reparto" />
+          <ScalarProperty Name="sinopsis" ColumnName="sinopsis" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+          <ScalarProperty Name="productora" ColumnName="productora" />
+          <ScalarProperty Name="premios" ColumnName="premios" />
+          <ScalarProperty Name="is_folder" ColumnName="is_folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_generos">
+      <EntityTypeMapping TypeName="media_managerModel.media_generos">
+        <MappingFragment StoreEntitySet="media_generos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="genero_id" ColumnName="genero_id" />
+          <ScalarProperty Name="media_id" ColumnName="media_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_paises">
+      <EntityTypeMapping TypeName="media_managerModel.media_paises">
+        <MappingFragment StoreEntitySet="media_paises">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pais_id" ColumnName="pais_id" />
+          <ScalarProperty Name="media_fi_id" ColumnName="media_fi_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paises">
+      <EntityTypeMapping TypeName="media_managerModel.pais">
+        <MappingFragment StoreEntitySet="paises">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="ModernUINavigationApp1.Pages.SettingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab Layout="List" SelectedSource="/gui/Pages/Settings/Appearance.xaml">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="Acerca de..." Source="/gui/Pages/Settings/About.xaml" />
+            </mui:ModernTab.Links>
+            
+        </mui:ModernTab>
+
+        <!-- <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Button Content="Button 1" Grid.Row="0" Click="Button_Click"></Button>
+        <TabControl Grid.Row="1" Name="_fcontent" Cursor="Hand" Margin="5,10,5,5">
+            <TabItem Header="Tab 1">
+            <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+                <WrapPanel Orientation="Vertical" x:Name="ConfigWrapPanel" >
+
+                    <Border BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="2" Margin="10">
+                        <Expander IsExpanded="True" BorderThickness="0" Header="General">
+                            // some controls here
+                        </Expander>
+                    </Border>
+                    <Border BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="2" Margin="10">
+                        <Expander IsExpanded="True" BorderThickness="0" Header="General">
+                            // some controls here
+                        </Expander>
+                    </Border>
+                    <Border BorderBrush="White" BorderThickness="1,1,1,1" CornerRadius="2" Margin="10">
+                        <Expander IsExpanded="True" BorderThickness="0" Header="General">
+                            // some controls here
+                        </Expander>
+                    </Border>
+
+                </WrapPanel>
+            </ScrollViewer>
+            </TabItem>-->
+       <!-- </TabControl> -->
+    </Grid>
+</UserControl>

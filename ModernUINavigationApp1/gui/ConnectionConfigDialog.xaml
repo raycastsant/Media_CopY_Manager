@@ -1,0 +1,33 @@
+﻿<mui:ModernDialog x:Class="MCP.gui.ConnectionConfigDialog"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d" d:DesignWidth="300"
+                  Title="ModernWindow" Height="187.218" ResizeMode="NoResize" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Name="lUser" HorizontalAlignment="Right" Margin="0 0 10 0" Tag="Usuario">Usuario</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="tbxUser" Margin="0 0 0 5"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="0" Name="lPass" HorizontalAlignment="Right" Margin="0 0 10 0" Tag="Contraseña">Contraseña</TextBlock>
+        <PasswordBox Grid.Row="1" Grid.Column="1" Name="tbxPass" Margin="0 0 0 5"></PasswordBox>
+        <TextBlock Grid.Row="2" Grid.Column="0" Name="lServer" HorizontalAlignment="Right" Margin="0 0 10 0" Tag="Servidor">Servidor</TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="tbxServer" Margin="0 0 0 5"></TextBox>
+        <TextBlock Grid.Row="3" Grid.Column="0" Name="lDB" HorizontalAlignment="Right" Margin="0 0 10 0" Tag="Base de datos">Base de datos</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="tbxDB" Margin="0 0 0 5"></TextBox>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Name="BtnSaveConnection" Click="BtnSaveConnection_Click">Establecer Conexión</Button>
+    </Grid>
+</mui:ModernDialog>

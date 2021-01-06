@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="media_managerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="categoria">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoria1" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="carpeta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="media_files" Relationship="Self.media_files_ibfk_1" FromRole="categorias" ToRole="media_files" />
+  </EntityType>
+  <EntityType Name="copia_puntos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="media_files" Relationship="Self.media_files_ibfk_3" FromRole="copia_puntos" ToRole="media_files" />
+  </EntityType>
+  <EntityType Name="genero">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="media_generos" Relationship="Self.media_generos_ibfk_1" FromRole="generos" ToRole="media_generos" />
+  </EntityType>
+  <EntityType Name="media_files">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoria_id" Type="Int32" Nullable="false" />
+    <Property Name="punto_copia_id" Type="Int32" Nullable="false" />
+    <Property Name="parent_id" Type="Int32" />
+    <Property Name="file_url" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="str_file" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fichero_portada" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="fichero_trailer" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="titulo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="anno" Type="Int32" />
+    <Property Name="director" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="reparto" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="sinopsis" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="duracion" Type="Int32" />
+    <Property Name="productora" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="premios" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="is_folder" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="categoria" Relationship="Self.media_files_ibfk_1" FromRole="media_files" ToRole="categorias" />
+    <NavigationProperty Name="copia_puntos" Relationship="Self.media_files_ibfk_3" FromRole="media_files" ToRole="copia_puntos" />
+    <NavigationProperty Name="media_generos" Relationship="Self.media_generos_ibfk_2" FromRole="media_files" ToRole="media_generos" />
+    <NavigationProperty Name="media_paises" Relationship="Self.media_paises_ibfk_1" FromRole="media_files" ToRole="media_paises" />
+  </EntityType>
+  <EntityType Name="media_generos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="genero_id" Type="Int32" Nullable="false" />
+    <Property Name="media_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="genero" Relationship="Self.media_generos_ibfk_1" FromRole="media_generos" ToRole="generos" />
+    <NavigationProperty Name="media_files" Relationship="Self.media_generos_ibfk_2" FromRole="media_generos" ToRole="media_files" />
+  </EntityType>
+  <EntityType Name="media_paises">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pais_id" Type="Int32" Nullable="false" />
+    <Property Name="media_fi_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="media_files" Relationship="Self.media_paises_ibfk_1" FromRole="media_paises" ToRole="media_files" />
+    <NavigationProperty Name="pais" Relationship="Self.media_paises_ibfk_2" FromRole="media_paises" ToRole="paises" />
+  </EntityType>
+  <EntityType Name="pais">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="media_paises" Relationship="Self.media_paises_ibfk_2" FromRole="paises" ToRole="media_paises" />
+  </EntityType>
+  <Association Name="media_files_ibfk_1">
+    <End Role="categorias" Type="Self.categoria" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_files" Type="Self.media_files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categorias">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_files">
+        <PropertyRef Name="categoria_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="media_files_ibfk_3">
+    <End Role="copia_puntos" Type="Self.copia_puntos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_files" Type="Self.media_files" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="copia_puntos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_files">
+        <PropertyRef Name="punto_copia_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="media_generos_ibfk_1">
+    <End Role="generos" Type="Self.genero" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_generos" Type="Self.media_generos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="generos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_generos">
+        <PropertyRef Name="genero_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="media_generos_ibfk_2">
+    <End Role="media_files" Type="Self.media_files" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_generos" Type="Self.media_generos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="media_files">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_generos">
+        <PropertyRef Name="media_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="media_paises_ibfk_1">
+    <End Role="media_files" Type="Self.media_files" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_paises" Type="Self.media_paises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="media_files">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_paises">
+        <PropertyRef Name="media_fi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="media_paises_ibfk_2">
+    <End Role="paises" Type="Self.pais" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="media_paises" Type="Self.media_paises" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paises">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="media_paises">
+        <PropertyRef Name="pais_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="media_managerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categorias" EntityType="Self.categoria" />
+    <EntitySet Name="copia_puntos" EntityType="Self.copia_puntos" />
+    <EntitySet Name="generos" EntityType="Self.genero" />
+    <EntitySet Name="media_files" EntityType="Self.media_files" />
+    <EntitySet Name="media_generos" EntityType="Self.media_generos" />
+    <EntitySet Name="media_paises" EntityType="Self.media_paises" />
+    <EntitySet Name="paises" EntityType="Self.pais" />
+    <AssociationSet Name="media_files_ibfk_1" Association="Self.media_files_ibfk_1">
+      <End Role="categorias" EntitySet="categorias" />
+      <End Role="media_files" EntitySet="media_files" />
+    </AssociationSet>
+    <AssociationSet Name="media_files_ibfk_3" Association="Self.media_files_ibfk_3">
+      <End Role="copia_puntos" EntitySet="copia_puntos" />
+      <End Role="media_files" EntitySet="media_files" />
+    </AssociationSet>
+    <AssociationSet Name="media_generos_ibfk_1" Association="Self.media_generos_ibfk_1">
+      <End Role="generos" EntitySet="generos" />
+      <End Role="media_generos" EntitySet="media_generos" />
+    </AssociationSet>
+    <AssociationSet Name="media_generos_ibfk_2" Association="Self.media_generos_ibfk_2">
+      <End Role="media_files" EntitySet="media_files" />
+      <End Role="media_generos" EntitySet="media_generos" />
+    </AssociationSet>
+    <AssociationSet Name="media_paises_ibfk_1" Association="Self.media_paises_ibfk_1">
+      <End Role="media_files" EntitySet="media_files" />
+      <End Role="media_paises" EntitySet="media_paises" />
+    </AssociationSet>
+    <AssociationSet Name="media_paises_ibfk_2" Association="Self.media_paises_ibfk_2">
+      <End Role="paises" EntitySet="paises" />
+      <End Role="media_paises" EntitySet="media_paises" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
