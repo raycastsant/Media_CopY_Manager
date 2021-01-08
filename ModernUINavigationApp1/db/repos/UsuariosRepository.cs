@@ -2,6 +2,9 @@
 using System.Data;
 using System.Linq;
 using System.Data.Entity;
+using System.Security.Cryptography;
+using System.Text;
+using System;
 using System.Threading.Tasks;
 
 namespace MCP.db
