@@ -11,7 +11,7 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class media_generos
     {
         public media_generos()
@@ -27,7 +27,7 @@ namespace MCP.db
         public int id { get; set; }
         public int genero_id { get; set; }
         public int media_id { get; set; }
-    
+
         public virtual genero genero { get; set; }
         public virtual media_files media_files { get; set; }
 

@@ -49,6 +49,8 @@
     <NavigationProperty Name="usuario" Relationship="Self.copias_ibfk_2" FromRole="copias" ToRole="usuarios" />
     <NavigationProperty Name="tipos_pago" Relationship="Self.copias_ibfk_3" FromRole="copias" ToRole="tipos_pago" />
     <NavigationProperty Name="registro_copias" Relationship="Self.registro_copias_ibfk_1" FromRole="copias" ToRole="registro_copias" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cliente" Relationship="media_managerModel.copias_ibfk_4" FromRole="copia" ToRole="cliente" />
   </EntityType>
   <EntityType Name="genero">
     <Key>
@@ -458,5 +460,65 @@
       <End Role="usuarios" EntitySet="usuarios" />
       <End Role="copia_puntos" EntitySet="copia_puntos" />
     </AssociationSet>
+    <EntitySet Name="clientes" EntityType="media_managerModel.cliente" />
+    <EntitySet Name="usbs" EntityType="media_managerModel.usb" />
+    <AssociationSet Name="copias_ibfk_4" Association="media_managerModel.copias_ibfk_4">
+      <End Role="cliente" EntitySet="clientes" />
+      <End Role="copia" EntitySet="copias" />
+    </AssociationSet>
+    <AssociationSet Name="usb_ibfk_1" Association="media_managerModel.usb_ibfk_1">
+      <End Role="cliente" EntitySet="clientes" />
+      <End Role="usb" EntitySet="usbs" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_cliente" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos_cliente" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="copias" Relationship="media_managerModel.copias_ibfk_4" FromRole="cliente" ToRole="copia" />
+    <NavigationProperty Name="usbs" Relationship="media_managerModel.usb_ibfk_1" FromRole="cliente" ToRole="usb" />
+  </EntityType>
+  <EntityType Name="usb">
+    <Key>
+      <PropertyRef Name="id_usb" />
+    </Key>
+    <Property Name="id_usb" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="numero_serie" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="capacidad" Type="Single" Nullable="false" />
+    <Property Name="marca" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="cliente" Relationship="media_managerModel.usb_ibfk_1" FromRole="usb" ToRole="cliente" />
+  </EntityType>
+  <Association Name="copias_ibfk_4">
+    <End Type="media_managerModel.cliente" Role="cliente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="media_managerModel.copia" Role="copia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="copia">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usb_ibfk_1">
+    <End Type="media_managerModel.cliente" Role="cliente" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="media_managerModel.usb" Role="usb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="usb">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

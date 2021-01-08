@@ -11,7 +11,7 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class pais
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,10 +19,10 @@ namespace MCP.db
         {
             this.media_paises = new HashSet<media_paises>();
         }
-    
+
         public int id { get; set; }
         public string nombre { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<media_paises> media_paises { get; set; }
 

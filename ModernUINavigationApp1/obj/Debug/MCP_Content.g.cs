@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("db/model1.tt")]
 
 

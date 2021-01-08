@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="media_managerModelStoreContainer" CdmEntityContainer="media_managerEntities">
+    <EntitySetMapping Name="categorias">
+      <EntityTypeMapping TypeName="media_managerModel.categoria">
+        <MappingFragment StoreEntitySet="categorias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tipo_categoria_id" ColumnName="tipo_categoria_id" />
+          <ScalarProperty Name="categoria1" ColumnName="categoria" />
+          <ScalarProperty Name="carpeta" ColumnName="carpeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="media_managerModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="nombre_cliente" ColumnName="nombre_cliente" />
+          <ScalarProperty Name="apellidos_cliente" ColumnName="apellidos_cliente" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="coeficientes_pago">
+      <EntityTypeMapping TypeName="media_managerModel.coeficientes_pago">
+        <MappingFragment StoreEntitySet="coeficientes_pago">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tipo_categoria_id" ColumnName="tipo_categoria_id" />
+          <ScalarProperty Name="tipo_pago_id" ColumnName="tipo_pago_id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="copia_puntos">
+      <EntityTypeMapping TypeName="media_managerModel.copia_puntos">
+        <MappingFragment StoreEntitySet="copia_puntos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="inactivo" ColumnName="inactivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="copias">
+      <EntityTypeMapping TypeName="media_managerModel.copia">
+        <MappingFragment StoreEntitySet="copias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="punto_copia_id" ColumnName="punto_copia_id" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="tipo_pago_id" ColumnName="tipo_pago_id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto_sistema" ColumnName="monto_sistema" />
+          <ScalarProperty Name="monto_real" ColumnName="monto_real" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="generos">
+      <EntityTypeMapping TypeName="media_managerModel.genero">
+        <MappingFragment StoreEntitySet="generos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_files">
+      <EntityTypeMapping TypeName="media_managerModel.media_files">
+        <MappingFragment StoreEntitySet="media_files">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="categoria_id" ColumnName="categoria_id" />
+          <ScalarProperty Name="punto_copia_id" ColumnName="punto_copia_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="file_url" ColumnName="file_url" />
+          <ScalarProperty Name="str_file" ColumnName="str_file" />
+          <ScalarProperty Name="fichero_portada" ColumnName="fichero_portada" />
+          <ScalarProperty Name="fichero_trailer" ColumnName="fichero_trailer" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="anno" ColumnName="anno" />
+          <ScalarProperty Name="director" ColumnName="director" />
+          <ScalarProperty Name="reparto" ColumnName="reparto" />
+          <ScalarProperty Name="sinopsis" ColumnName="sinopsis" />
+          <ScalarProperty Name="duracion" ColumnName="duracion" />
+          <ScalarProperty Name="productora" ColumnName="productora" />
+          <ScalarProperty Name="premios" ColumnName="premios" />
+          <ScalarProperty Name="is_folder" ColumnName="is_folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_generos">
+      <EntityTypeMapping TypeName="media_managerModel.media_generos">
+        <MappingFragment StoreEntitySet="media_generos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="genero_id" ColumnName="genero_id" />
+          <ScalarProperty Name="media_id" ColumnName="media_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="media_paises">
+      <EntityTypeMapping TypeName="media_managerModel.media_paises">
+        <MappingFragment StoreEntitySet="media_paises">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="pais_id" ColumnName="pais_id" />
+          <ScalarProperty Name="media_fi_id" ColumnName="media_fi_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paises">
+      <EntityTypeMapping TypeName="media_managerModel.pais">
+        <MappingFragment StoreEntitySet="paises">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="preferencias">
+      <EntityTypeMapping TypeName="media_managerModel.preferencia">
+        <MappingFragment StoreEntitySet="preferencias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="valor_string" ColumnName="valor_string" />
+          <ScalarProperty Name="valor_int" ColumnName="valor_int" />
+          <ScalarProperty Name="valor_double" ColumnName="valor_double" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registro_copias">
+      <EntityTypeMapping TypeName="media_managerModel.registro_copias">
+        <MappingFragment StoreEntitySet="registro_copias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="copia_id" ColumnName="copia_id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="archivo_url" ColumnName="archivo_url" />
+          <ScalarProperty Name="destino_url" ColumnName="destino_url" />
+          <ScalarProperty Name="peso" ColumnName="peso" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="nombre_categoria" ColumnName="nombre_categoria" />
+          <ScalarProperty Name="media_file_id" ColumnName="media_file_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_categorias">
+      <EntityTypeMapping TypeName="media_managerModel.tipo_categorias">
+        <MappingFragment StoreEntitySet="tipo_categorias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipos_pago">
+      <EntityTypeMapping TypeName="media_managerModel.tipos_pago">
+        <MappingFragment StoreEntitySet="tipos_pago">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="trabajadores">
+      <EntityTypeMapping TypeName="media_managerModel.trabajadore">
+        <MappingFragment StoreEntitySet="trabajadores">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="nombre_apell" ColumnName="nombre_apell" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usbs">
+      <EntityTypeMapping TypeName="media_managerModel.usb">
+        <MappingFragment StoreEntitySet="usb">
+          <ScalarProperty Name="id_usb" ColumnName="id_usb" />
+          <ScalarProperty Name="numero_serie" ColumnName="numero_serie" />
+          <ScalarProperty Name="capacidad" ColumnName="capacidad" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="media_managerModel.usuario">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="is_admin" ColumnName="is_admin" />
+          <ScalarProperty Name="is_owner" ColumnName="is_owner" />
+          <ScalarProperty Name="eliminado" ColumnName="eliminado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="usuarios_punto_copias" TypeName="media_managerModel.usuarios_punto_copias" StoreEntitySet="usuarios_punto_copias">
+      <EndProperty Name="usuarios">
+        <ScalarProperty Name="id" ColumnName="user_id" />
+      </EndProperty>
+      <EndProperty Name="copia_puntos">
+        <ScalarProperty Name="id" ColumnName="punyo_copia_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

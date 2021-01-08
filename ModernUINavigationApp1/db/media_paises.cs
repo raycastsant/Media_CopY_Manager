@@ -11,7 +11,7 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class media_paises
     {
         public media_paises()
@@ -27,7 +27,7 @@ namespace MCP.db
         public int id { get; set; }
         public int pais_id { get; set; }
         public int media_fi_id { get; set; }
-    
+
         public virtual media_files media_files { get; set; }
         public virtual pais pais { get; set; }
     }

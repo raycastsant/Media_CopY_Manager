@@ -28,7 +28,9 @@ namespace MCP.db
         public System.DateTime fecha { get; set; }
         public double monto_sistema { get; set; }
         public double monto_real { get; set; }
+        public int id_cliente { get; set; }
     
+        public virtual cliente cliente { get; set; }
         public virtual copia_puntos copia_puntos { get; set; }
         public virtual usuario usuario { get; set; }
         public virtual tipos_pago tipos_pago { get; set; }

@@ -11,7 +11,7 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class categoria
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,12 +19,12 @@ namespace MCP.db
         {
             this.media_files = new HashSet<media_files>();
         }
-    
+
         public int id { get; set; }
         public int tipo_categoria_id { get; set; }
         public string categoria1 { get; set; }
         public string carpeta { get; set; }
-    
+
         public virtual tipo_categorias tipo_categorias { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<media_files> media_files { get; set; }

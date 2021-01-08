@@ -13,7 +13,7 @@ namespace MCP.db
         //private static int Copys_In_Progress = 0;
         //private static DbContextTransaction transaction = null;
 
-        public static media_managerEntities Context;// = new media_managerEntities();
+        public static media_managerEntities Context = new media_managerEntities();
 
         public static MediaFilesRepository MediaFilesRepo = new MediaFilesRepository();
         public static MediaGenerosRepository MediaGenerosRepo = new MediaGenerosRepository();

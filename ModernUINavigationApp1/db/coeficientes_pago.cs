@@ -11,14 +11,14 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class coeficientes_pago
     {
         public int id { get; set; }
         public int tipo_categoria_id { get; set; }
         public int tipo_pago_id { get; set; }
         public double valor { get; set; }
-    
+
         public virtual tipo_categorias tipo_categorias { get; set; }
         public virtual tipos_pago tipos_pago { get; set; }
     }

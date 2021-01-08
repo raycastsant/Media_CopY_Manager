@@ -11,7 +11,7 @@ namespace MCP.db
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class tipo_categorias
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -20,11 +20,11 @@ namespace MCP.db
             this.categorias = new HashSet<categoria>();
             this.coeficientes_pago = new HashSet<coeficientes_pago>();
         }
-    
+
         public int id { get; set; }
         public string nombre { get; set; }
         public string codigo { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<categoria> categorias { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

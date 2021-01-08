@@ -33,6 +33,7 @@
     <EntitySetMapping Name="copias">
       <EntityTypeMapping TypeName="media_managerModel.copia">
         <MappingFragment StoreEntitySet="copias">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="user_id" ColumnName="user_id" />
           <ScalarProperty Name="punto_copia_id" ColumnName="punto_copia_id" />
@@ -176,5 +177,26 @@
         <ScalarProperty Name="id" ColumnName="punyo_copia_id" />
       </EndProperty>
     </AssociationSetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="media_managerModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="apellidos_cliente" ColumnName="apellidos_cliente" />
+          <ScalarProperty Name="nombre_cliente" ColumnName="nombre_cliente" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usbs">
+      <EntityTypeMapping TypeName="media_managerModel.usb">
+        <MappingFragment StoreEntitySet="usb">
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="capacidad" ColumnName="capacidad" />
+          <ScalarProperty Name="numero_serie" ColumnName="numero_serie" />
+          <ScalarProperty Name="id_usb" ColumnName="id_usb" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
