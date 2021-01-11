@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MCP.db.repos;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace MCP.db
         public static CopiasRepository CopiasRepo = new CopiasRepository();
         public static TipoPagosRepository TipoPagosRepo = new TipoPagosRepository();
         public static PreferencesRepository PreferenciasRepo = new PreferencesRepository();
+        public static ClientesRepository ClienteRepo = new ClientesRepository();
 
         public static bool SavingState = false;
 

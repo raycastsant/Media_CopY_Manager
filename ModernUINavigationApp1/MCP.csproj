@@ -152,6 +152,7 @@
     <Compile Include="db\registro_copias.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="db\repos\ClientesRepository.cs" />
     <Compile Include="db\repos\CopiasRepository.cs" />
     <Compile Include="db\repos\PreferencesRepository.cs" />
     <Compile Include="db\repos\TipoPagosRepository.cs" />
@@ -246,6 +247,10 @@
     </Compile>
     <Compile Include="gui\Pages\PLoader.xaml.cs">
       <DependentUpon>PLoader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="gui\Pages\CreateClient.xaml.cs">
+      <DependentUpon>CreateClient.xaml</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -342,6 +347,11 @@
     <Page Include="gui\Pages\PScanner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\CreateClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

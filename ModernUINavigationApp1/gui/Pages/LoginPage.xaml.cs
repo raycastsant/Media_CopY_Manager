@@ -1,5 +1,8 @@
 ﻿using MCP;
+using MCP.db;
 using MCP.gui;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -24,6 +27,7 @@ namespace WpfApp1.gui
             cbxPuntoCopia.Visibility = Visibility.Hidden;
 
             this.Loaded += ContentLoaded;
+
         }
 
         private void ContentLoaded(object sender, RoutedEventArgs e)

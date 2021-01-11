@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\
+C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\
 MCP
 none
 false
 DEBUG;TRACE
-E:\WORK\_Proyectos\Alexander\Software Paquete\Media Copy Manager (WPF)\MediaCopyManager (MUI Style)\GitHub\Media_CopY_Manager\ModernUINavigationApp1\App.xaml
-27110531001
+C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\App.xaml
+2884710878
 21144330430
-103924689626
-81-695986971
-gui\components\CustomCombo.xaml;gui\components\MediaFilePlayer.xaml;gui\components\ProgressInfo.xaml;gui\ConnectionConfigDialog.xaml;gui\ListDialog.xaml;gui\ListSelectorDialog.xaml;gui\CopyListViewDialog.xaml;gui\LoginDialog.xaml;gui\Pages\administracion\PCoeficientes.xaml;gui\Pages\administracion\PTrabajadores.xaml;gui\Pages\administracion\PPuntosCopia.xaml;gui\Pages\administracion\PUsuarios.xaml;gui\Pages\CopyListViewDialogPage.xaml;gui\Pages\LoginPage.xaml;gui\Pages\nomencladores\PGeneros.xaml;gui\Pages\nomencladores\PPaises.xaml;gui\Pages\nomencladores\PCategorias.xaml;gui\Pages\PRegistroCopias.xaml;gui\Pages\PEditarCatalogo.xaml;gui\Pages\PLoader.xaml;gui\Pages\PScanner.xaml;MainWindow.xaml;gui\Pages\Settings\About.xaml;gui\Pages\Settings\Appearance.xaml;gui\Pages\PHome.xaml;gui\Pages\SettingsPage.xaml;Themes\MCPModernWindow.xaml;
+102-2144169273
+81-779384448
+gui\components\CustomCombo.xaml;gui\components\MediaFilePlayer.xaml;gui\components\ProgressInfo.xaml;gui\ConnectionConfigDialog.xaml;gui\ListDialog.xaml;gui\ListSelectorDialog.xaml;gui\CopyListViewDialog.xaml;gui\LoginDialog.xaml;gui\Pages\administracion\PCoeficientes.xaml;gui\Pages\administracion\PTrabajadores.xaml;gui\Pages\administracion\PPuntosCopia.xaml;gui\Pages\administracion\PUsuarios.xaml;gui\Pages\CopyListViewDialogPage.xaml;gui\Pages\LoginPage.xaml;gui\Pages\nomencladores\PGeneros.xaml;gui\Pages\nomencladores\PPaises.xaml;gui\Pages\nomencladores\PCategorias.xaml;gui\Pages\PRegistroCopias.xaml;gui\Pages\PEditarCatalogo.xaml;gui\Pages\PLoader.xaml;gui\Pages\PScanner.xaml;gui\Pages\CreateClient.xaml;MainWindow.xaml;gui\Pages\Settings\About.xaml;gui\Pages\Settings\Appearance.xaml;gui\Pages\PHome.xaml;gui\Pages\SettingsPage.xaml;Themes\MCPModernWindow.xaml;
 
 False
 
