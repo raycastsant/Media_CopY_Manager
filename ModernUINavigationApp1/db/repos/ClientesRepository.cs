@@ -51,5 +51,14 @@ namespace MCP.db.repos
             DBManager.Context.Entry(entity).State = EntityState.Modified;
             DBManager.Context.SaveChanges();
         }
+
+        public cliente FindByPhone(string phone)
+        {
+            cliente cliente = (from c in DBManager.Context.clientes
+                               where c.telefono == phone
+                               select c).FirstOrDefault();
+            return cliente;
+
+        }
     }
 }

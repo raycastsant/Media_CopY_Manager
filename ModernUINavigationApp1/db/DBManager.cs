@@ -29,6 +29,7 @@ namespace MCP.db
         public static TipoPagosRepository TipoPagosRepo = new TipoPagosRepository();
         public static PreferencesRepository PreferenciasRepo = new PreferencesRepository();
         public static ClientesRepository ClienteRepo = new ClientesRepository();
+        public static UsbRepository UsbRepo = new UsbRepository();
 
         public static bool SavingState = false;
 

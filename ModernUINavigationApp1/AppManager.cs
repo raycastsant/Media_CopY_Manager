@@ -401,12 +401,11 @@ namespace MCP
                             _loginDialog.Hide();
                             mw.Show();
                             userLogged = true;
-                            _loginDialog.Close();
+                            _loginDialog.Close(); 
 
                             //LoadScannerSettings();
 
                             SetAppStatus("Aplicación iniciada.", false);
-
                             USBManager.StartUsbDeviceWatcher();
                         }
                         else

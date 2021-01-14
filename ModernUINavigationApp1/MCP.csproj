@@ -158,6 +158,7 @@
     <Compile Include="db\repos\TipoPagosRepository.cs" />
     <Compile Include="db\repos\TrabajadoresRepository.cs" />
     <Compile Include="db\repos\CoeficientePagosRepository.cs" />
+    <Compile Include="db\repos\UsbRepository.cs" />
     <Compile Include="db\repos\UsuariosRepository.cs" />
     <Compile Include="db\repos\RegistroCopiasRepository.cs" />
     <Compile Include="db\repos\MediaGenerosRepository.cs" />
@@ -224,6 +225,9 @@
     <Compile Include="gui\CopyListViewDialog.xaml.cs">
       <DependentUpon>CopyListViewDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="gui\Pages\administracion\PClientes.xaml.cs">
+      <DependentUpon>PClientes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="gui\Pages\administracion\PCoeficientes.xaml.cs">
       <DependentUpon>PCoeficientes.xaml</DependentUpon>
     </Compile>
@@ -247,10 +251,6 @@
     </Compile>
     <Compile Include="gui\Pages\PLoader.xaml.cs">
       <DependentUpon>PLoader.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="gui\Pages\CreateClient.xaml.cs">
-      <DependentUpon>CreateClient.xaml</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -293,6 +293,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="gui\LoginDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="gui\Pages\administracion\PClientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -347,11 +351,6 @@
     <Page Include="gui\Pages\PScanner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="gui\Pages\CreateClient.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

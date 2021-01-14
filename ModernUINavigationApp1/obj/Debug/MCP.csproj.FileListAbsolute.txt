@@ -310,6 +310,5 @@ C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\De
 C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\MCP.csproj.CopyComplete
 C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\MCP.exe
 C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\MCP.pdb
-C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\bin\Debug\gui\Pages\CreateClient.xaml.cs
-C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\gui\Pages\CreateClient.g.cs
-C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\gui\Pages\CreateClient.baml
+C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PClientes.g.cs
+C:\Users\gayos\Documents\GitHub\Media_CopY_Manager\ModernUINavigationApp1\obj\Debug\gui\Pages\administracion\PClientes.baml
