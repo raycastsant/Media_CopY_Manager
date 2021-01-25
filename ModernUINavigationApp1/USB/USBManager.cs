@@ -47,15 +47,24 @@ namespace MCP.USB
               }
           }*/
 
-        public static void StartUsbDeviceWatcher()
+        public static void StartUsbDeviceWatcher(bool session)
         {
             usb_serial = new USBSerialNumber();
-
-            DispatcherTimer dt = new DispatcherTimer();
-            dt.Tick += new EventHandler(watchForInsertedDevice);
-            dt.Interval = new TimeSpan(0, 0, 3);
-            dt.Start();
+            if(AppMAnager.usbTimer == null || session)
+            {
+                AppMAnager.usbTimer = new DispatcherTimer();
+                AppMAnager.usbTimer.Tick += new EventHandler(watchForInsertedDevice);
+                AppMAnager.usbTimer.Interval = new TimeSpan(0, 0, 3);
+                AppMAnager.usbTimer.Start();
+            }
+            else
+            {
+                AppMAnager.usbTimer.Stop();
+            }
+            
         }
+
+      
 
         private static void watchForInsertedDevice(object sender, EventArgs e)
         {
@@ -125,22 +134,27 @@ namespace MCP.USB
             if (!exist)
             {
 
-                Window window = new Window
-                {
-                    Title = "Test",
-                    Content = new PClientes()
-                };
-                
-                window.ShowDialog();
+               
                 usb usb = new usb
                 {
                     numero_serie = sn,
                     capacidad = capacity,
-                    id_cliente = 1,
+                    //id_cliente = 0,
                     marca = ""
                     //cliente = DBManager.ClienteRepo.FindById(1)
                 };
-                DBManager.UsbRepo.Add(usb);
+                Window window = new Window
+                {
+                    Title = "Test",
+                    Content = new PClientes(usb)
+                    
+                };
+
+                window.WindowState = WindowState.Maximized;
+           
+                window.ShowDialog();
+                
+                //DBManager.UsbRepo.Add(usb);
             }
         }
 

@@ -2,18 +2,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using static System.Windows.Forms.AxHost;
+using System.Windows.Forms;
+using Button = System.Windows.Controls.Button;
+using MessageBox = System.Windows.Forms.MessageBox;
+using UserControl = System.Windows.Controls.UserControl;
 
 namespace MCP.gui.Pages.administracion
 {
@@ -25,6 +19,8 @@ namespace MCP.gui.Pages.administracion
         private int State { get; set; }
 
         private cliente cliente;
+        private usb usb;
+        private bool usbToClient;
 
         public PClientes()
         {
@@ -34,6 +30,7 @@ namespace MCP.gui.Pages.administracion
             lNombre.Tag = "Nombre";
             lApellido.Tag = "Apellido";
             lTelefono.Tag = "Telefono";
+            usbToClient = false;
 
             //            AppMAnager.setDefaultForeColor(lNombre.Foreground);
 
@@ -42,6 +39,26 @@ namespace MCP.gui.Pages.administracion
             cliente = null;
 
            
+        }
+
+        public PClientes(usb usb)
+        {
+            InitializeComponent();
+
+            refreshGrid();
+            lNombre.Tag = "Nombre";
+            lApellido.Tag = "Apellido";
+            lTelefono.Tag = "Telefono";
+            usbToClient = true;
+
+            //            AppMAnager.setDefaultForeColor(lNombre.Foreground);
+
+            hideForm();
+            this.usb = usb;
+            State = AppMAnager.STATE_NULL;
+            cliente = new cliente();
+
+
         }
 
         private void refreshGrid()
@@ -133,18 +150,11 @@ namespace MCP.gui.Pages.administracion
 
             if (tbTelefono.Text.Trim().Length > 0)
             {
-                if (DBManager.ClienteRepo.FindByPhone(tbTelefono.Text) == null)
-                {
-                    cliente.telefono = tbTelefono.Text;
-                    AppMAnager.restoreDefaultTextBox(tbTelefono);
-                    AppMAnager.restoreDefaulLabel(lTelefono);
-                }
-                else
-                {
-                    hasError = true;
-                    AppMAnager.SetErrorTextBox(tbTelefono);
-                    AppMAnager.SetLabel_Error(lTelefono, "El cliente ya existe");
-                }
+               
+                cliente.telefono = tbTelefono.Text;
+                AppMAnager.restoreDefaultTextBox(tbTelefono);
+                AppMAnager.restoreDefaulLabel(lTelefono);
+                
             }
             else
             {
@@ -160,7 +170,14 @@ namespace MCP.gui.Pages.administracion
             {
                 if (State == AppMAnager.STATE_INSERT)
                 {
-                    DBManager.ClienteRepo.Add(cliente);
+                    cliente c = DBManager.ClienteRepo.Add(cliente);
+                    
+                    if (usbToClient)
+                    {
+                        usb.id_cliente = c.id_cliente;
+                        usb.cliente = c;
+                        DBManager.UsbRepo.Add(usb);
+                    }
                     AfterSave();
                 }
                 else
@@ -178,6 +195,7 @@ namespace MCP.gui.Pages.administracion
             clearForm();
             hideForm();
             cliente = null;
+            usbToClient = false;
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
@@ -188,7 +206,7 @@ namespace MCP.gui.Pages.administracion
                 cliente = DBManager.ClienteRepo.FindById(id);
                 if (cliente != null)
                 {
-                        DBManager.ClienteRepo.Update(cliente);
+                        DBManager.ClienteRepo.Delete(id);
                         refreshGrid();
 
                         clearForm();
@@ -266,5 +284,26 @@ namespace MCP.gui.Pages.administracion
             }*/
         }
 
+        private void _dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(usbToClient)
+            {
+                cliente = (cliente)_dataGrid.CurrentCell.Item;
+                Console.WriteLine(cliente.nombre_cliente);
+                DialogResult result = MessageBox.Show("¿El dispositvo pertenece a " + cliente.nombre_cliente + " " + cliente.apellidos_cliente + "?", "Elegir cliente", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    this.usb.id_cliente = cliente.id_cliente;
+                    this.usb.cliente = cliente;
+                    DBManager.UsbRepo.Add(usb);
+                }
+                else
+                {
+                    showForm();
+                    State = AppMAnager.STATE_INSERT;
+                }
+            }
+          
+        }
     }
 }

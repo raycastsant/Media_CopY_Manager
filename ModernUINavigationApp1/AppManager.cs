@@ -34,6 +34,7 @@ namespace MCP
 
         public static TextBlock tbStatus;
         public static ModernProgressRing statusLoader;
+        public static DispatcherTimer usbTimer;
 
         public static readonly string TYPES_MEDIA = "*.mp4,*.avi,*.mpg,*.mpeg,*.mov,*.vob,*.mkv";
         public static readonly string TYPES_SUBTITLE = "*.srt,*.sub";
@@ -54,6 +55,8 @@ namespace MCP
         public static readonly int STATE_INSERT = 1;
         public static readonly int STATE_UPDATE = 2;
         public static readonly int STATE_COPYING_FILES = 3;
+
+        
 
         /** Si un nodo es un directorio y se selecciona/deselecciona entonces
          se refresca la seleccion de todos sus hijos*/
@@ -406,7 +409,7 @@ namespace MCP
                             //LoadScannerSettings();
 
                             SetAppStatus("Aplicación iniciada.", false);
-                            USBManager.StartUsbDeviceWatcher();
+                            USBManager.StartUsbDeviceWatcher(userLogged);
                         }
                         else
                             LError.Text = "Usuario o contraseña incorrectos";
@@ -461,6 +464,7 @@ namespace MCP
                 _loginDialog.Show();
                 mw.Close();
                 userLogged = false;
+                USBManager.StartUsbDeviceWatcher(userLogged);
             }
 
             return noProblem;
