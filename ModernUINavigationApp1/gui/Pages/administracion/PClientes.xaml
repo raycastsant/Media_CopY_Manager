@@ -22,7 +22,7 @@
                 <ColumnDefinition Width="300"/>
             </Grid.ColumnDefinitions>
 
-            <DataGrid Margin="0,0,0,0" Grid.Column="0" Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" AutoGenerateColumns="false" IsReadOnly="true" Name="_dataGrid" GridLinesVisibility="Horizontal" SelectionChanged="_dataGrid_SelectionChanged" >
+            <DataGrid Margin="0,0,0,0" Grid.Column="0" Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" AutoGenerateColumns="false" IsReadOnly="true" Name="_dataGrid" GridLinesVisibility="Horizontal" >
                 <DataGrid.ColumnHeaderStyle>
                     <Style TargetType="DataGridColumnHeader">
                         <Setter Property="HorizontalContentAlignment" Value="Left" />
@@ -36,14 +36,21 @@
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <mui:ModernButton Name="BtnUpdate" CommandParameter="{Binding id_cliente}" Click="BtnUpdate_Click" EllipseDiameter="30" EllipseStrokeThickness="1" IconWidth="15" IconHeight="15" Content="" ToolTip="Actualizar" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" IconData="F1 M 54.6818,20.1053L 55.8947,21.3182C 57.4019,22.8254 57.4019,25.2691 55.8947,26.7763L 53.7721,28.8989L 47.1011,22.2279L 49.2237,20.1053C 50.7309,18.5981 53.1746,18.5981 54.6818,20.1053 Z M 36.1848,46.4862L 29.5138,39.8152L 45.8881,23.4408L 52.5592,30.1119L 36.1848,46.4862 Z M 28.9073,42.241L 33.759,47.0927L 27.0251,48.9749L 28.9073,42.241 Z M 19,57L 19,25L 40.8063,25L 36.8063,29L 23,29L 23,53L 53,53L 53,32.6912L 57,28.6911L 57,57L 19,57 Z "/>
+                                <mui:ModernButton Name="BtnUpdate" CommandParameter="{Binding id_cliente}" Click="BtnUpdate_Click" EllipseDiameter="30" EllipseStrokeThickness="1" IconWidth="15" IconHeight="15" Content="" ToolTip="Actualizar" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" IconData="F1 M 54.6818,20.1053L 55.8947,21.3182C 57.4019,22.8254 57.4019,25.2691 55.8947,26.7763L 53.7721,28.8989L 47.1011,22.2279L 49.2237,20.1053C 50.7309,18.5981 53.1746,18.5981 54.6818,20.1053 Z M 36.1848,46.4862L 29.5138,39.8152L 45.8881,23.4408L 52.5592,30.1119L 36.1848,46.4862 Z M 28.9073,42.241L 33.759,47.0927L 27.0251,48.9749L 28.9073,42.241 Z M 19,57L 19,25L 40.8063,25L 36.8063,29L 23,29L 23,53L 53,53L 53,32.6912L 57,28.6911L 57,57L 19,57 Z " Initialized="Set_Visible_Update"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <mui:ModernButton Name="BtnDelete" CommandParameter="{Binding id_cliente}" EllipseDiameter="30" EllipseStrokeThickness="1" IconWidth="15" IconHeight="15" Content="" ToolTip="Eliminar" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" Click="BtnDelete_Click" IconData="F1 M 19,38L 57,38L 57,44L 19,44L 19,38 Z "/>
+                                <mui:ModernButton Name="BtnDelete" CommandParameter="{Binding id_cliente}" EllipseDiameter="30" EllipseStrokeThickness="1" IconWidth="15" IconHeight="15" Content="" ToolTip="Eliminar" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" Click="BtnDelete_Click" IconData="F1 M 19,38L 57,38L 57,44L 19,44L 19,38 Z " Initialized="SetVisibleDelete"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <mui:ModernButton Name="BtnSelect" CommandParameter="{Binding id_cliente}" EllipseDiameter="30" EllipseStrokeThickness="1" IconWidth="15" IconHeight="15" Content="" ToolTip="Seleccionar" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" Click="BtnSelect_Click" IconData="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" Initialized="SetVisible"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

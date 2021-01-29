@@ -17,6 +17,7 @@ namespace MCP.gui.Pages.administracion
     public partial class PClientes : UserControl
     {
         private int State { get; set; }
+        public object BtnSelect { get; }
 
         private cliente cliente;
         private usb usb;
@@ -37,6 +38,7 @@ namespace MCP.gui.Pages.administracion
             hideForm();
             State = AppMAnager.STATE_NULL;
             cliente = null;
+            
 
            
         }
@@ -57,6 +59,7 @@ namespace MCP.gui.Pages.administracion
             this.usb = usb;
             State = AppMAnager.STATE_NULL;
             cliente = new cliente();
+
 
 
         }
@@ -284,9 +287,11 @@ namespace MCP.gui.Pages.administracion
             }*/
         }
 
-        private void _dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+      
+
+        private void BtnSelect_Click(object sender, RoutedEventArgs e)
         {
-            if(usbToClient)
+            if (usbToClient)
             {
                 cliente = (cliente)_dataGrid.CurrentCell.Item;
                 Console.WriteLine(cliente.nombre_cliente);
@@ -303,7 +308,48 @@ namespace MCP.gui.Pages.administracion
                     State = AppMAnager.STATE_INSERT;
                 }
             }
-          
+        }
+
+        private void SetVisible(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (usbToClient)
+            {
+               
+                btn.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btn.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void SetVisibleDelete(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (usbToClient)
+            {
+
+                btn.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                btn.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Set_Visible_Update(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (usbToClient)
+            {
+
+                btn.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                btn.Visibility = Visibility.Visible;
+            }
         }
     }
 }
