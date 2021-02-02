@@ -44,6 +44,14 @@ namespace MCP.gui.Pages
                 cbxCategoria.Items.Add(categ);
             }
 
+            //combo clientes
+            List<cliente> clientes = DBManager.ClienteRepo.List;
+            cbxCliente.Items.Add("- TODOS -");
+            foreach (cliente cliente in clientes)
+            {
+                cbxCliente.Items.Add(cliente.nombre_cliente);
+            }
+
             DateTime now = DateTime.Now;
             DateTime ini = now.Date + new TimeSpan(0, 0, 0);
             _datePickerIni.SelectedDate = ini;

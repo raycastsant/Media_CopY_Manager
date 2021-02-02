@@ -60,5 +60,12 @@ namespace MCP.db.repos
             return cliente;
 
         }
+
+        public List<string> ListDistinctCategValues()
+        {
+            return (from r in DBManager.Context.clientes
+                    select r.nombre_cliente).Distinct().ToList();
+        }
+
     }
 }

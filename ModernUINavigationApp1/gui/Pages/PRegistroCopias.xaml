@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="200">
+             mc:Ignorable="d" d:DesignHeight="200" Width="1170.059">
 
     <Grid Style="{StaticResource ContentRoot}" Margin="0" >
         <Grid.RowDefinitions>
@@ -33,6 +33,10 @@
                 <TextBlock Text="Punto de copia" HorizontalAlignment="Left"/>
                 <ComboBox Name="cbxPuntoCopia" Width="130" SelectionChanged="FilterChanged" />
             </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="20 0 0 0" x:Name="_spPuntoCopia_Copy">
+                <TextBlock Text="Cliente" HorizontalAlignment="Left"/>
+                <ComboBox x:Name="cbxCliente" Width="130" SelectionChanged="FilterChanged" />
+            </StackPanel>
         </StackPanel>
 
         <Grid Name="_grid" Margin="0" Grid.Row="1" Grid.Column="0">
@@ -57,6 +61,7 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                     <DataGridTextColumn Width="90" Header="Copia #" Binding="{Binding NoCopia}"></DataGridTextColumn>
+                    <DataGridTextColumn Width="110" Header="Cliente" Binding="{Binding nombreCliente }"></DataGridTextColumn>
                     <DataGridTextColumn Width="90" Header="Punto" Binding="{Binding puntoCopia}"></DataGridTextColumn>
                     <DataGridTextColumn Width="90" Header="Usuario" Binding="{Binding username }"></DataGridTextColumn>
                     <DataGridTextColumn Width="110" Header="Fecha" Binding="{Binding fecha}"></DataGridTextColumn>
